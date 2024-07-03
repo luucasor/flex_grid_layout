@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* flex */
+            display: flex;
+            flex-flow: row wrap;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            gap: 10px;
+
+            /* others */
+            background-color: salmon;
+        }
+
+        .item {
+            /* flex */
+            flex-shrink: 3;
+
+            /* others */
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" style="order: 1; flex-grow: 1;">Produtos 1</div>
+        <div class="item" style="order: 2; flex-grow: 1;">Produtos 2</div>
+        <div class="item" style="order: 3; flex-grow: 1;">Produtos 3</div>
+        <div class="item" style="order: 4; flex-grow: 3;">Produtos 4</div>
+    </div>
+    <div class="container green">
+        <div class="item">Produtos 4</div>
+        <div class="item">Produtos 5</div>
+        <div class="item" style="align-self: flex-end;">Produtos 6</div>
+        <div class="item">Produtos 7</div>
+        <div class="item">Produtos 8</div>
+        <div class="item">Produtos 9</div>
+        <div class="item">Produtos 10</div>
+    </div>
+</body>
+
+</html>
